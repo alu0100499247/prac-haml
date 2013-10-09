@@ -1,5 +1,6 @@
 require 'rack/request'
 require 'rack/response'
+require 'haml'
 
 
 module PiedraPapelTijeras
@@ -32,19 +33,12 @@ module PiedraPapelTijeras
 				"Ohh! :( #{computer_throw} gana a #{player_throw}! Suerte en la próxima! ;)"
 			end
 
+			engine = Haml::Engine.new File.open("views/index.haml").read
 			res = Rack::Response.new
-			res.write <<-"EOS"
-			<html>
-				<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-				<title> PPT </title>
-				<body>
-					<h1>
-						#{answer}
-						#{$choose}
-					</h1>
-				</body>
-			</html>
-			EOS
+			res.write engine.render({},
+				:answer => answer,
+				:choose => $choose
+				:throws => @throws)
 			res.finish
 		end
 	end
