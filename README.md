@@ -21,7 +21,7 @@ El contenido del fichero que se presenta es el siguiente:
 * .gitignore
 * .ruby
 * views
-*	index.haml 
+	* index.haml 
 
 Ejecución	
 ---------
@@ -29,7 +29,7 @@ Ejecución
 Introduciremos en consola el siguiente comando: `ruby ppt.rb`. Luego con un navegador iremos a la página `localhost:9292` para visualizar el resultado.
 
 
-###Asignatura: Sistemas y Tecnologías Web.
+#####Asignatura: Sistemas y Tecnologías Web.
 
 |  Alumno |  Alu  |
 |---------|-------|
