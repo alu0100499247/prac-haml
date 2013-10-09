@@ -37,7 +37,7 @@ module PiedraPapelTijeras
 			res = Rack::Response.new
 			res.write engine.render({},
 				:answer => answer,
-				:choose => $choose
+				:choose => $choose,
 				:throws => @throws)
 			res.finish
 		end
