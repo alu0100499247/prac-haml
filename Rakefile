@@ -1,3 +1,5 @@
+require 'rake'
+
 desc "Ejecutar la práctica"
 task :default do
 	sh "ruby ppt.rb"

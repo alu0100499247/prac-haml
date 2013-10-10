@@ -26,7 +26,17 @@ El contenido del fichero que se presenta es el siguiente:
 Ejecución	
 ---------
 
-Introduciremos en consola el siguiente comando: `ruby ppt.rb`. Luego con un navegador iremos a la página `localhost:9292` para visualizar el resultado.
+Podemos ejecutar la práctica de las siguientes formas:
+
+* Como en el directorio hemos específicado un Rakefile, podemos introducir en la consola el siguiente comando: `rake`. Luego con un navegador iremos a la página `localhost:9292` para visualizar el resultado.
+
+* A la orden `rake` le podemos pasar varios parámetros que se corresponden con las diferentes opciones de ejecución del código. Por ejemplo:
+
+	* El comando `rake piedra` ejecutara el programa con la opción **piedra**.
+	* El comando `rake papel` ejecutara el programa con la opción **papel**.
+	* El comando `rake tijeras` ejecutara el programa con la opción **tijeras**.
+
+* También podemos introducir por consola el siguiente comando: `ruby ppt.rb`. Luego con un navegador iremos a la página `localhost:9292` para visualizar el resultado.
 
 
 #####Asignatura: Sistemas y Tecnologías Web.
