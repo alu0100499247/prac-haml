@@ -6,6 +6,7 @@ GEM
     haml (4.0.3)
       tilt
     rack (1.5.2)
+    rake (10.1.0)
     thin (1.6.0)
       daemons (>= 1.0.9)
       eventmachine (>= 1.0.0)
@@ -18,4 +19,5 @@ PLATFORMS
 DEPENDENCIES
   haml
   rack
+  rake
   thin
